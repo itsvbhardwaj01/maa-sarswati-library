@@ -8,7 +8,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 body {
-  background-color: #dbdbdb;
+  background-image: url(./images/evie-s-Sw7f58YJbc0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
 }
 
@@ -19,13 +21,12 @@ body {
 
   height: 50px;
   width: 98vw;
-  background-color: blue;
-  border: 50px solid white;
+  background-color: rgba(255, 255, 255, 0.39);
+
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 1px solid grey;
 }
 .nav h1 {
   position: absolute;
@@ -36,7 +37,7 @@ body {
 
   font-size: 40px;
 
-  color: rgb(255, 255, 255);
+  color: blue;
 }
 .buttons {
   padding-left: 1000px;
@@ -48,7 +49,7 @@ body {
   height: 34px;
   top: 30px;
   background: #ffffff;
-  border: 2px solid rgb(0, 0, 0);
+
   border-radius: 6px;
   font-size: 25px;
   color: blue;
@@ -66,8 +67,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: blue;
-
+  background-color: rgba(255, 255, 255, 0.47);
+  border: 3px solid white;
   height: 250px;
   margin-top: 13px;
   margin-left: 10px;
@@ -138,7 +139,7 @@ body {
 }
 
 .box2 {
-  background-color: #ffffff;
+  background-color: #ffffff4c;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -257,4 +258,10 @@ body {
   margin-top: 20px;
   height: 60px;
   padding-top: 17px;
+}
+
+/* media qureis */
+media only screen and (max-width:320px) {
+  .nav {
+  }
 }
