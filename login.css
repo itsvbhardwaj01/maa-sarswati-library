@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  background: linear-gradient(
+    242.89deg,
+    #2f2fa2 0.8%,
+    rgba(198, 10, 234, 0.657467) 93.8%,
+    rgba(123, 43, 108, 0.564679) 99.95%,
+    rgba(139, 42, 97, 0.477823) 99.96%,
+    rgba(153, 41, 86, 0.392559) 99.97%,
+    rgba(178, 40, 69, 0.252529) 99.98%,
+    rgba(197, 38, 55, 0.145833) 99.99%,
+    rgba(222, 37, 37, 0) 100%
+  );
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  padding: 20px;
+}
+.login {
+  background-color: white;
+  width: 42rem;
+  height: 25rem;
+  position: absolute;
+  top: 32%;
+  left: 30%;
+  margin: -50px 0 0 -50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.login .text {
+  width: 33rem;
+  height: 3rem;
+  margin-bottom: 4px;
+  margin-top: 13px;
+  background: #fdfffe;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  font-size: 25px;
+  color: #000000;
+  padding-left: 10px;
+}
+
+.login .password {
+  margin-top: 33px;
+}
+.submit {
+  width: 531px;
+  height: 57px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  background: #4a1ad3;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  font-size: 25px;
+  color: #ffffff;
+}
+.submit:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.login .login-h2 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.login .forgot {
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+
+  width: 15rem;
+  text-align: center;
+}
+.login .forgot:hover {
+  background-color: yellow;
+}
