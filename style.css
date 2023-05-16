@@ -28,7 +28,7 @@ body {
   position: absolute;
   width: 518px;
   height: 48px;
-  left: 32px;
+  left: 70px;
   top: 15px;
   text-align: center;
   font-size: 35px;
@@ -228,11 +228,11 @@ body {
 .footer h2 {
   width: 500px;
   height: 34px;
-
+  padding-top: 5px;
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 6px;
-  font-size: 25px;
+  font-size: 20px;
   color: #535353;
   text-align: center;
 }
@@ -262,27 +262,4 @@ body {
   margin-top: 20px;
   height: 60px;
   padding-top: 17px;
-}
-
-/* media queries */
-@media only screen and (min-width: 375px) {
-  .nav h1 {
-    position: absolute;
-    width: 366px;
-    height: 48px;
-    left: 6px;
-    top: 13px;
-    text-align: center;
-    font-size: 35px;
-    background: rgb(52, 202, 254);
-    background: linear-gradient(
-      90deg,
-      rgba(52, 202, 254, 1) 0%,
-      rgba(145, 40, 205, 1) 100%,
-      rgba(227, 208, 208, 1) 100%
-    );
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    border: 3px solid rgb(0, 63, 209);
-  }
 }

@@ -3,8 +3,8 @@ const userpassword = document.getElementById("pass");
 const submitbtn = document.getElementById("submit");
 const email1 = "itsvbhardwaj9721@gmail.com";
 const pass1 = "library1";
-const email2 = "gopi@gmail.com";
-const pass2 = "library2";
+const email2 = "gopi";
+const pass2 = "lib";
 
 submitbtn.onclick = function evaluateuser(pass, evaluate) {
   if (userinput.value == email1 && userpassword.value == pass1) {
