@@ -6,7 +6,7 @@ const pass1 = "library1";
 
 submitbtn.onclick = function evaluateuser(pass, evaluate) {
   if (userinput.value == email1 && userpassword.value == pass1) {
-    window.open("/adminpage.html", "_self");
+    window.open("./adminpage.html", "_self");
   } else {
     alert("wrong credentials");
   }

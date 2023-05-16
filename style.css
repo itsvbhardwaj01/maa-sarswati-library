@@ -259,9 +259,3 @@ body {
   height: 60px;
   padding-top: 17px;
 }
-
-/* media qureis */
-media only screen and (max-width:320px) {
-  .nav {
-  }
-}

@@ -21,6 +21,34 @@ const all_seat = [
     seat: 02,
     phone: 9430666178,
     address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
   },
   {
     name: "vikash",
@@ -63,17 +91,17 @@ const googlemap = function (urls, location) {
 
 // login redirect
 login_btn.onclick = function () {
-  window.open("./login.html", "_self");
+  window.open("./login/login.html", "_self");
 };
 
 // signup route
 signup_btn.onclick = function () {
-  window.open("./signup.html", "_self");
+  window.open("./signup/signup.html", "_self");
 };
 
 // admin login route
 admin_btn.onclick = function () {
-  window.open("./htmls/admin.html", "_self");
+  window.open("./admins/admin.html", "_self");
 };
 
 // show all seats
