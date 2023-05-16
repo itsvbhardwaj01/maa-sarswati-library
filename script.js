@@ -6,6 +6,7 @@ const admin_btn = document.getElementById("admin");
 const totalseat = document.getElementById("h23");
 const bookedseat = document.getElementById("h22");
 const vacantseat1 = document.getElementById("h21");
+const pricebtn = document.getElementById("pricing");
 // all seats as objects in an array
 
 const all_seat = [
@@ -284,6 +285,10 @@ signup_btn.onclick = function () {
 // admin login route
 admin_btn.onclick = function () {
   window.open("./admins/admin.html", "_self");
+};
+// pricing route
+pricebtn.onclick = function () {
+  window.open("./pricing/pricing.html", "_self");
 };
 
 // show all seats
