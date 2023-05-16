@@ -8,10 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 body {
-  background-image: url(./images/evie-s-Sw7f58YJbc0-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
+  background-color: #ffffff;
 }
 
 .nav {
@@ -21,7 +18,6 @@ body {
 
   height: 50px;
   width: 98vw;
-  background-color: rgba(255, 255, 255, 0.39);
 
   border-radius: 10px;
   display: flex;
@@ -31,13 +27,21 @@ body {
 .nav h1 {
   position: absolute;
   width: 518px;
-  height: 45px;
+  height: 48px;
   left: 32px;
   top: 15px;
-
-  font-size: 40px;
-
-  color: blue;
+  text-align: center;
+  font-size: 35px;
+  background: rgb(52, 202, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(52, 202, 254, 1) 0%,
+    rgba(145, 40, 205, 1) 100%,
+    rgba(227, 208, 208, 1) 100%
+  );
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 3px solid rgb(0, 63, 209);
 }
 .buttons {
   padding-left: 1000px;
@@ -48,11 +52,11 @@ body {
   width: 140px;
   height: 34px;
   top: 30px;
-  background: #ffffff;
-
+  background: blue;
+  border: none;
   border-radius: 6px;
   font-size: 25px;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 .btn:hover {
   background: rgb(29, 16, 241);
@@ -258,4 +262,27 @@ body {
   margin-top: 20px;
   height: 60px;
   padding-top: 17px;
+}
+
+/* media queries */
+@media only screen and (min-width: 375px) {
+  .nav h1 {
+    position: absolute;
+    width: 366px;
+    height: 48px;
+    left: 6px;
+    top: 13px;
+    text-align: center;
+    font-size: 35px;
+    background: rgb(52, 202, 254);
+    background: linear-gradient(
+      90deg,
+      rgba(52, 202, 254, 1) 0%,
+      rgba(145, 40, 205, 1) 100%,
+      rgba(227, 208, 208, 1) 100%
+    );
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 3px solid rgb(0, 63, 209);
+  }
 }
