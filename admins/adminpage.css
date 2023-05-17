@@ -14,12 +14,60 @@ body {
     rgba(145, 40, 205, 1) 100%,
     rgba(227, 208, 208, 1) 100%
   );
+  z-index: 1;
 }
+.updatebox {
+  background-color: white;
+  height: 90vh;
+  z-index: 5;
+  display: none;
+  margin-top: 10px;
+}
+.updatebox .inputbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.updatebox input {
+  width: 40rem;
+  height: 3rem;
+  margin: 17px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 h1 {
   text-align: center;
   margin-top: 20px;
   color: beige;
 }
+.buttondiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: aliceblue;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-bottom: 7px;
+}
+.updatebtn {
+  height: 2rem;
+  background-color: blue;
+  color: white;
+  width: 15rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 3px solid white;
+  margin-top: 10px;
+}
+.hide {
+  display: none;
+}
+
 .container {
   height: 85vh;
   margin-top: 10px;

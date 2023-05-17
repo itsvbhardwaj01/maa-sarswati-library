@@ -9,200 +9,77 @@
   </head>
   <body>
     <h1>Admin Panel (Seat Management)</h1>
-    <div class="container">
-      <div class="seat seat1">
-        <h3>01</h3>
-        <button class="btn1">UPDATE</button>
+    <div class="buttondiv">
+      <button onclick="showupdatebox()" class="updatebtn" id="updatebtn">
+        Update Seat Information
+      </button>
+      <button
+        onclick="hideupdatebox()"
+        class="updatebtn hide"
+        id="doneupdating"
+      >
+        Done Updating
+      </button>
+    </div>
+    <div class="updatebox" id="updatebox">
+      <div class="inputbox">
+        <input type="text" placeholder="Type SeatNumber" />
+        <input type="text" placeholder="Type Name" />
+        <input type="text" placeholder="Type Address" />
+        <input type="text" placeholder="Type phone Number" />
+        <input type="text" placeholder="Type Email" />
+        <input type="text" placeholder="Type Password" />
       </div>
-
-      <div class="seat seat2">
-        <h3>02</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat3">
-        <h3>03</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat3">
-        <h3>04</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat4">
-        <h3>05</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat5">
-        <h3>06</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat6">
-        <h3>07</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat7">
-        <h3>08</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat8">
-        <h3>09</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat9">
-        <h3>10</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat10">
-        <h3>11</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat11">
-        <h3>12</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat12">
-        <h3>13</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat13">
-        <h3>14</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat14">
-        <h3>15</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat15">
-        <h3>16</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat16">
-        <h3>17</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat17">
-        <h3>18</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat18">
-        <h3>19</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat19">
-        <h3>20</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat20">
-        <h3>21</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat21">
-        <h3>22</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat22">
-        <h3>23</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat23">
-        <h3>24</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat24">
-        <h3>25</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat25">
-        <h3>26</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat26">
-        <h3>27</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat27">
-        <h3>28</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat28">
-        <h3>29</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat29">
-        <h3>30</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat30">
-        <h3>31</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat31">
-        <h3>32</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat32">
-        <h3>33</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat33">
-        <h3>34</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat34">
-        <h3>35</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat35">
-        <h3>36</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat36">
-        <h3>37</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat37">
-        <h3>38</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat38">
-        <h3>39</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat39">
-        <h3>40</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat40">
-        <h3>41</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat41">
-        <h3>42</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat42">
-        <h3>43</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat43">
-        <h3>44</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat44">
-        <h3>45</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat45">
-        <h3>46</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat46">
-        <h3>47</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
-      <div class="seat seat47">
-        <h3>48</h3>
-        <button class="btn1">UPDATE</button>
-      </div>
+    </div>
+    <div class="container" id="container1">
+      <div class="seat seat1"><h3>01</h3></div>
+      <div class="seat seat2"><h3>02</h3></div>
+      <div class="seat seat3"><h3>03</h3></div>
+      <div class="seat seat4"><h3>04</h3></div>
+      <div class="seat seat5"><h3>05</h3></div>
+      <div class="seat seat6"><h3>06</h3></div>
+      <div class="seat seat7"><h3>07</h3></div>
+      <div class="seat seat8"><h3>08</h3></div>
+      <div class="seat seat9"><h3>09</h3></div>
+      <div class="seat seat10"><h3>10</h3></div>
+      <div class="seat seat11"><h3>11</h3></div>
+      <div class="seat seat12"><h3>12</h3></div>
+      <div class="seat seat13"><h3>13</h3></div>
+      <div class="seat seat14"><h3>14</h3></div>
+      <div class="seat seat15"><h3>15</h3></div>
+      <div class="seat seat16"><h3>16</h3></div>
+      <div class="seat seat17"><h3>17</h3></div>
+      <div class="seat seat18"><h3>18</h3></div>
+      <div class="seat seat19"><h3>19</h3></div>
+      <div class="seat seat20"><h3>20</h3></div>
+      <div class="seat seat21"><h3>21</h3></div>
+      <div class="seat seat22"><h3>22</h3></div>
+      <div class="seat seat23"><h3>23</h3></div>
+      <div class="seat seat24"><h3>24</h3></div>
+      <div class="seat seat25"><h3>25</h3></div>
+      <div class="seat seat26"><h3>26</h3></div>
+      <div class="seat seat27"><h3>27</h3></div>
+      <div class="seat seat28"><h3>28</h3></div>
+      <div class="seat seat29"><h3>29</h3></div>
+      <div class="seat seat30"><h3>30</h3></div>
+      <div class="seat seat31"><h3>31</h3></div>
+      <div class="seat seat32"><h3>32</h3></div>
+      <div class="seat seat33"><h3>33</h3></div>
+      <div class="seat seat34"><h3>34</h3></div>
+      <div class="seat seat35"><h3>35</h3></div>
+      <div class="seat seat36"><h3>36</h3></div>
+      <div class="seat seat37"><h3>37</h3></div>
+      <div class="seat seat38"><h3>38</h3></div>
+      <div class="seat seat39"><h3>39</h3></div>
+      <div class="seat seat40"><h3>40</h3></div>
+      <div class="seat seat41"><h3>41</h3></div>
+      <div class="seat seat42"><h3>42</h3></div>
+      <div class="seat seat43"><h3>43</h3></div>
+      <div class="seat seat44"><h3>44</h3></div>
+      <div class="seat seat45"><h3>45</h3></div>
+      <div class="seat seat46"><h3>46</h3></div>
+      <div class="seat seat47"><h3>47</h3></div>
+      <div class="seat seat48"><h3>48</h3></div>
     </div>
     <script src="adminpage.js"></script>
   </body>
