@@ -8,13 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 body {
-  background: rgb(67, 226, 131);
-  background: linear-gradient(
-    90deg,
-    rgba(67, 226, 131, 1) 12%,
-    rgba(71, 227, 223, 1) 50%,
-    rgba(0, 13, 241, 1) 100%
-  );
+  background-color: white;
 }
 
 .nav {

@@ -11,9 +11,15 @@
     <div class="nav">
       <h1>Maa Sarswati Library</h1>
       <div class="buttons">
-        <button class="admin, btn" id="admin">Admin</button>
-        <button class="signup, btn" id="signup">Sign up</button>
-        <button class="login, btn" id="login">Log in</button>
+        <button onclick="adminlogin()" class="admin, btn" id="admin">
+          Admin
+        </button>
+        <button onclick="redirectlogin()" class="signup, btn" id="signup">
+          Sign up
+        </button>
+        <button onclick="redirectlogin()" class="login, btn" id="login_btn">
+          Log in
+        </button>
       </div>
     </div>
     <div class="data">
@@ -32,7 +38,8 @@
     </div>
 
     <div class="box2">
-      <button class="box2-btn" id="pricing">Pricing</button
+      <button onclick="priceopen()" class="box2-btn" id="pricing">
+        Pricing</button
       ><button class="box2-btn">Reserve Seat</button
       ><button class="box2-btn">Photo Gallery</button>
     </div>
@@ -60,6 +67,7 @@
     </h2>
 
     <script src="script.js"></script>
-    <script src="./admins/adminpage.js"></script>
+
+    <script src="data.js"></script>
   </body>
 </html>

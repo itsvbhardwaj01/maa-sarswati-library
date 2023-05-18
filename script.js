@@ -1,261 +1,25 @@
-// my Variables
 const gmap_btn = document.getElementById("footer-btns");
-const login_btn = document.getElementById("login");
+const loginbtn = document.getElementById("login_btn");
 const signup_btn = document.getElementById("signup");
 const admin_btn = document.getElementById("admin");
 const totalseat = document.getElementById("h23");
 const bookedseat = document.getElementById("h22");
 const vacantseat1 = document.getElementById("h21");
 const pricebtn = document.getElementById("pricing");
-// all seats as objects in an array
-
-const all_seat = [
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "notbooked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "notbooked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "notbooked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "notbooked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-  {
-    name: "vikash",
-    seat: 02,
-    phone: 9430666178,
-    address: "bhagwanpur",
-    status: "booked",
-  },
-];
+const email1 = "itsvbhardwaj9721@gmail.com";
+const pass1 = "library1";
+const email2 = "gopi";
+const pass2 = "lib";
+const updatebtn1 = document.getElementById("updatebtn");
+const box_update = document.getElementById("updatebox");
+const done1 = document.getElementById("doneupdating");
+const containerbox = document.getElementById("container1");
+const userinput = document.getElementById("email");
+const userpassword = document.getElementById("pass");
 
 // Functions
+// showing location on location button
+
 const googlemap = function (urls, location) {
   if (gmap_btn.onclick) {
     window.open(
@@ -266,43 +30,89 @@ const googlemap = function (urls, location) {
 };
 
 // login redirect
-login_btn.onclick = function () {
+function redirectlogin() {
   window.open("./login/login.html", "_self");
-};
+}
 
 // signup route
-signup_btn.onclick = function () {
+function redirectlogin() {
   window.open("./signup/signup.html", "_self");
-};
+}
 
 // admin login route
-admin_btn.onclick = function () {
+function adminlogin() {
   window.open("./admins/admin.html", "_self");
-};
+}
 // pricing route
-pricebtn.onclick = function () {
+function priceopen() {
   window.open("./pricing/pricing.html", "_self");
-};
+}
+
+//  admin login
+
+const submitbtn1 = document.getElementById("submit11");
+
+function evaluate1() {
+  if (userinput.value == email1 && userpassword.value == pass1) {
+    window.open("./adminpage.html", "_self");
+  } else if (userinput.value == email2 && userpassword.value == pass2) {
+    window.open("./adminpage.html", "_self");
+  } else {
+    alert("wrong credentials");
+  }
+}
+// retrieving user data from local storage
 
 // show all seats
+const retrievedata = JSON.parse(localStorage.getItem("userdata"));
 function showtotalseat(seat, display) {
-  totalseat.innerHTML = all_seat.length;
+  totalseat.innerHTML = retrievedata.length;
 }
-showtotalseat();
+
 // show booked seat
 
 let newbookedseat = [];
-for (let i = 0; i < all_seat.length; i++) {
-  if (all_seat[i].status == "booked") {
-    newbookedseat = [...newbookedseat, all_seat[i]];
-    bookedseat.innerHTML = newbookedseat.length;
+function showbookedseat() {
+  for (let i = 0; i < retrievedata.length; i++) {
+    if (retrievedata[i].status == "booked") {
+      newbookedseat = [...newbookedseat, retrievedata[i]];
+      bookedseat.innerHTML = newbookedseat.length;
+    }
   }
 }
+
 // show vacant seat
 let vacantseat = [];
-for (let i = 0; i < all_seat.length; i++) {
-  if (all_seat[i].status == "notbooked") {
-    vacantseat = [...vacantseat, all_seat[i]];
-    vacantseat1.innerHTML = vacantseat.length;
+function showvacantseat() {
+  for (let i = 0; i < retrievedata.length; i++) {
+    if (retrievedata[i].status == "notbooked") {
+      vacantseat = [...vacantseat, retrievedata[i]];
+      vacantseat1.innerHTML = vacantseat.length;
+    }
   }
+}
+
+// show update box
+
+function showupdatebox() {
+  box_update.style.display = "block";
+  done1.style.display = "block";
+  containerbox.style.display = "none";
+}
+// hide update box
+
+function hideupdatebox() {
+  box_update.style.display = "none";
+  done1.style.display = "none";
+  containerbox.style.display = "flex";
+}
+// show info box
+
+function showinfobox(click, result) {
+  infobox.style.display = "block";
+}
+// hide info box
+
+function hideinfobox(click, result) {
+  infobox.style.display = "none";
 }

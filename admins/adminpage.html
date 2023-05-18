@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="./adminpage.css" />
   </head>
   <body>
+    <div class="info" id="info1">
+      <h3>Seat NO: 21</h3>
+      <h3>Name: Vikash Kumar</h3>
+      <h3>Address: Patahi</h3>
+      <h3>Phone Number: 821007<span>9002</span></h3>
+      <h3>Status: Booked</h3>
+      <h3>Email: Vikash Kumar</h3>
+      <button onclick="hideinfobox()" class="donebtn" id="donebtn">Done</button>
+    </div>
     <h1>Admin Panel (Seat Management)</h1>
     <div class="buttondiv">
-      <button onclick="showupdatebox()" class="updatebtn" id="updatebtn">
+      <button onclick="showupdatebox();" class="updatebtn" id="updatebtn">
         Update Seat Information
       </button>
       <button
@@ -23,64 +32,162 @@
     </div>
     <div class="updatebox" id="updatebox">
       <div class="inputbox">
-        <input type="text" placeholder="Type SeatNumber" />
-        <input type="text" placeholder="Type Name" />
-        <input type="text" placeholder="Type Address" />
-        <input type="text" placeholder="Type phone Number" />
-        <input type="text" placeholder="Type Email" />
-        <input type="text" placeholder="Type Password" />
+        <input type="text" placeholder="Type SeatNumber" id="SeatNumber1" />
+        <input type="text" placeholder="Type Name" id="Name1" />
+        <input type="text" placeholder="Type Address" id="Address1" />
+        <input type="text" placeholder="Type phone Number" id="Number1" />
+        <input type="text" placeholder="Type Email" id="Email1" />
+        <input type="text" placeholder="Type Password" id="Password1" />
       </div>
     </div>
     <div class="container" id="container1">
-      <div class="seat seat1"><h3>01</h3></div>
-      <div class="seat seat2"><h3>02</h3></div>
-      <div class="seat seat3"><h3>03</h3></div>
-      <div class="seat seat4"><h3>04</h3></div>
-      <div class="seat seat5"><h3>05</h3></div>
-      <div class="seat seat6"><h3>06</h3></div>
-      <div class="seat seat7"><h3>07</h3></div>
-      <div class="seat seat8"><h3>08</h3></div>
-      <div class="seat seat9"><h3>09</h3></div>
-      <div class="seat seat10"><h3>10</h3></div>
-      <div class="seat seat11"><h3>11</h3></div>
-      <div class="seat seat12"><h3>12</h3></div>
-      <div class="seat seat13"><h3>13</h3></div>
-      <div class="seat seat14"><h3>14</h3></div>
-      <div class="seat seat15"><h3>15</h3></div>
-      <div class="seat seat16"><h3>16</h3></div>
-      <div class="seat seat17"><h3>17</h3></div>
-      <div class="seat seat18"><h3>18</h3></div>
-      <div class="seat seat19"><h3>19</h3></div>
-      <div class="seat seat20"><h3>20</h3></div>
-      <div class="seat seat21"><h3>21</h3></div>
-      <div class="seat seat22"><h3>22</h3></div>
-      <div class="seat seat23"><h3>23</h3></div>
-      <div class="seat seat24"><h3>24</h3></div>
-      <div class="seat seat25"><h3>25</h3></div>
-      <div class="seat seat26"><h3>26</h3></div>
-      <div class="seat seat27"><h3>27</h3></div>
-      <div class="seat seat28"><h3>28</h3></div>
-      <div class="seat seat29"><h3>29</h3></div>
-      <div class="seat seat30"><h3>30</h3></div>
-      <div class="seat seat31"><h3>31</h3></div>
-      <div class="seat seat32"><h3>32</h3></div>
-      <div class="seat seat33"><h3>33</h3></div>
-      <div class="seat seat34"><h3>34</h3></div>
-      <div class="seat seat35"><h3>35</h3></div>
-      <div class="seat seat36"><h3>36</h3></div>
-      <div class="seat seat37"><h3>37</h3></div>
-      <div class="seat seat38"><h3>38</h3></div>
-      <div class="seat seat39"><h3>39</h3></div>
-      <div class="seat seat40"><h3>40</h3></div>
-      <div class="seat seat41"><h3>41</h3></div>
-      <div class="seat seat42"><h3>42</h3></div>
-      <div class="seat seat43"><h3>43</h3></div>
-      <div class="seat seat44"><h3>44</h3></div>
-      <div class="seat seat45"><h3>45</h3></div>
-      <div class="seat seat46"><h3>46</h3></div>
-      <div class="seat seat47"><h3>47</h3></div>
-      <div class="seat seat48"><h3>48</h3></div>
+      <div onclick="showinfobox()" class="seat seat1" id="seat1">
+        <h3>01</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat2" class="seat seat2">
+        <h3>02</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat3" class="seat seat3">
+        <h3>03</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat4" class="seat seat4">
+        <h3>04</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat5" class="seat seat5">
+        <h3>05</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat6" class="seat seat6">
+        <h3>06</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat7" class="seat seat7">
+        <h3>07</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat8" class="seat seat8">
+        <h3>08</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat9" class="seat seat9">
+        <h3>09</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat10" class="seat seat10">
+        <h3>10</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat11" class="seat seat11">
+        <h3>11</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat12" class="seat seat12">
+        <h3>12</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat13" class="seat seat13">
+        <h3>13</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat14" class="seat seat14">
+        <h3>14</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat15" class="seat seat15">
+        <h3>15</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat16" class="seat seat16">
+        <h3>16</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat17" class="seat seat17">
+        <h3>17</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat18" class="seat seat18">
+        <h3>18</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat19" class="seat seat19">
+        <h3>19</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat20" class="seat seat20">
+        <h3>20</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat21" class="seat seat21">
+        <h3>21</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat22" class="seat seat22">
+        <h3>22</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat23" class="seat seat23">
+        <h3>23</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat24" class="seat seat24">
+        <h3>24</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat25" class="seat seat25">
+        <h3>25</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat26" class="seat seat26">
+        <h3>26</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat27" class="seat seat27">
+        <h3>27</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat28" class="seat seat28">
+        <h3>28</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat29" class="seat seat29">
+        <h3>29</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat30" class="seat seat30">
+        <h3>30</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat31" class="seat seat31">
+        <h3>31</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat32" class="seat seat32">
+        <h3>32</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat33" class="seat seat33">
+        <h3>33</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat34" class="seat seat34">
+        <h3>34</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat35" class="seat seat35">
+        <h3>35</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat36" class="seat seat36">
+        <h3>36</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat37" class="seat seat37">
+        <h3>37</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat38" class="seat seat38">
+        <h3>38</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat39" class="seat seat39">
+        <h3>39</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat40" class="seat seat40">
+        <h3>40</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat41" class="seat seat41">
+        <h3>41</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat42" class="seat seat42">
+        <h3>42</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat43" class="seat seat43">
+        <h3>43</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat44" class="seat seat44">
+        <h3>44</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat45" class="seat seat45">
+        <h3>45</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat46" class="seat seat46">
+        <h3>46</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat47" class="seat seat47">
+        <h3>47</h3>
+      </div>
+      <div onclick="showinfobox()" id="seat48" class="seat seat48">
+        <h3>48</h3>
+      </div>
     </div>
-    <script src="adminpage.js"></script>
+
+    <script src="../script.js"></script>
+    <script src="../data.js"></script>
   </body>
 </html>
