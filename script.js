@@ -35,7 +35,7 @@ function redirectlogin() {
 }
 
 // signup route
-function redirectlogin() {
+function redirectsignup() {
   window.open("./signup/signup.html", "_self");
 }
 
@@ -48,7 +48,7 @@ function priceopen() {
   window.open("./pricing/pricing.html", "_self");
 }
 
-//  admin login
+//////////////////  admin login//////////////////////////////
 
 const submitbtn1 = document.getElementById("submit11");
 
@@ -61,15 +61,31 @@ function evaluate1() {
     alert("wrong credentials");
   }
 }
-// retrieving user data from local storage
+///////////////////////////////////////////////////////////////////////
 
-// show all seats
+////////////// retrieving user data from local storage//////////////////////
+
 const retrievedata = JSON.parse(localStorage.getItem("userdata"));
+
+console.log(retrievedata);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////
+// localStorage.setItem(
+//   (retrievedata[0].status = "booked"),
+//   JSON.stringify(retrievedata)
+// );
+////////////////////////////////////////////////////////
+////////////////// show all seats///////////////////
+
 function showtotalseat(seat, display) {
   totalseat.innerHTML = retrievedata.length;
 }
+showtotalseat();
+///////////////////////////////////////////////////////////
 
-// show booked seat
+////////////// show booked seat////////////////////////////
 
 let newbookedseat = [];
 function showbookedseat() {
@@ -80,8 +96,9 @@ function showbookedseat() {
     }
   }
 }
-
-// show vacant seat
+showbookedseat();
+////////////////////////////////////////////////////////////////
+/////////////////// show vacant seat/////////////////////////
 let vacantseat = [];
 function showvacantseat() {
   for (let i = 0; i < retrievedata.length; i++) {
@@ -91,22 +108,24 @@ function showvacantseat() {
     }
   }
 }
+showvacantseat();
+/////////////////////////////////////////////////////////////////////
 
-// show update box
+///////////////////// show update box///////////////////////////////
 
 function showupdatebox() {
   box_update.style.display = "block";
   done1.style.display = "block";
   containerbox.style.display = "none";
 }
-// hide update box
+//////////////////// hide update box////////////////////////////////
 
 function hideupdatebox() {
   box_update.style.display = "none";
   done1.style.display = "none";
   containerbox.style.display = "flex";
 }
-// show info box
+////////////////////// show info box//////////////////////////////////
 
 function showinfobox(click, result) {
   infobox.style.display = "block";
