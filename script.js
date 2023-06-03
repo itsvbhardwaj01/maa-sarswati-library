@@ -16,6 +16,7 @@ const done1 = document.getElementById("doneupdating");
 const containerbox = document.getElementById("container1");
 const userinput = document.getElementById("email");
 const userpassword = document.getElementById("pass");
+const infobox = document.getElementById("info1");
 
 // Functions
 // showing location on location button
@@ -130,6 +131,7 @@ function hideupdatebox() {
 function showinfobox(click, result) {
   infobox.style.display = "block";
 }
+showinfobox();
 // hide info box
 
 function hideinfobox(click, result) {

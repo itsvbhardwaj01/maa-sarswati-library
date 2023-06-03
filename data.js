@@ -214,6 +214,48 @@ let all_seat = [
     address: "bhagwanpur",
     status: "booked",
   },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
+  {
+    name: "vikash",
+    seat: 02,
+    phone: 9430666178,
+    address: "bhagwanpur",
+    status: "booked",
+  },
 ];
 // pushing all seats in local storage
 
