@@ -149,3 +149,30 @@ body {
 #526D82
 #9DB2BF
 #DDE6ED */
+.section3 {
+  background-color: #9db2bf;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.section3 .services {
+  color: #27374d;
+}
+.section3 .box21 {
+  background-color: #27374d;
+  width: 95%;
+  color: #dde6ed;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.section4 h2 {
+  text-align: center;
+  margin: 0.3em;
+}
+.section4 p {
+  padding: 0.8em;
+  text-align: justify;
+}
