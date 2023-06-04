@@ -105,10 +105,10 @@ body {
   }
   .login {
     background-color: white;
-    /* width: 90%; */
+    width: 90%;
     height: 22rem;
-    /* position: absolute; */
-    /* top: 32%; */
+    position: absolute;
+    top: 32%;
     /* left: 30%; */
     margin: 0 auto;
     display: flex;
@@ -117,7 +117,7 @@ body {
     border-radius: 10px;
   }
   .login .text {
-    width: 33rem;
+    width: 90%;
     height: 3rem;
     margin-bottom: 4px;
     margin-top: 13px;
@@ -133,9 +133,9 @@ body {
     margin-top: 33px;
   }
   .submit {
-    width: 531px;
+    width: 90%;
     height: 57px;
-    margin-top: 18px;
+    margin-top: 1em;
     margin-bottom: 20px;
     background: #4a1ad3;
     border: 2px solid #ffffff;
@@ -182,7 +182,7 @@ body {
     /* position: absolute; */
     /* top: 32%; */
     /* left: 30%; */
-    margin: 8em auto;
+    margin: 10em 0em;
     display: flex;
     align-items: center;
     flex-direction: column;

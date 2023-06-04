@@ -119,21 +119,29 @@ function showupdatebox() {
   done1.style.display = "block";
   containerbox.style.display = "none";
 }
+
+////////////////////// show info box//////////////////////////////////
+
+function showinfobox(click, result) {
+  infobox.style.display = "block";
+}
+
+// hide info box
+function hideinfobox(click, result) {
+  infobox.style.display = "none";
+}
+
+// updateseat
+const seatno11 = document.getElementById("seatnumber1");
+const name11 = document.getElementById("name1");
+const add1 = document.getElementById("address1");
+const phonno1 = document.getElementById("phonenumber1");
+const email11 = document.getElementById("email1");
+const pass11 = document.getElementById("password1");
 //////////////////// hide update box////////////////////////////////
 
 function hideupdatebox() {
   box_update.style.display = "none";
   done1.style.display = "none";
   containerbox.style.display = "flex";
-}
-////////////////////// show info box//////////////////////////////////
-
-function showinfobox(click, result) {
-  infobox.style.display = "block";
-}
-showinfobox();
-// hide info box
-
-function hideinfobox(click, result) {
-  infobox.style.display = "none";
 }
